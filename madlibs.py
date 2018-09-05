@@ -4,7 +4,10 @@
 import time
 import webbrowser
 
-def cute_poppy(prompt):
+
+
+
+def cute_puppy(prompt):
     word = raw_input(prompt)
     return word
 
@@ -92,7 +95,7 @@ def favorite_song_lyric(prompt):
     word = raw_input(prompt)
     return word
 
-cute_poppy_value = cute_poppy("Please enter the name of a cute poppy: ")
+cute_puppy_value = cute_puppy("Please enter the name of a cute puppy: ")
 silly_word_value = silly_word("Please enter a silly word: ")
 adjetive_value = adjetive("Please enter an adjetive: ")
 plural_type_of_profession_value = plural_type_of_profession("Please enter a plural type of profession: ")
@@ -114,7 +117,7 @@ plural_animal_value = plural_animal("Please enter a plural animal: ")
 another_ing_verb_value = another_ing_verb("Please enter another verb ending in ing: ")
 favorite_song_lyric_value = favorite_song_lyric("Please enter your favorite song lyric: ")
 
-print("– Good evening my {}.").format(cute_poppy_value)
+print("– Good evening my {}.").format(cute_puppy_value)
 print("– Special Director {}. It's good to see you again.").format(silly_word_value)
 print("– I'm here with your next mission. A criminal organization with the most {} {} hacked into the government's {}, stealing their top-secret report of {}").format(adjetive_value, plural_type_of_profession_value, type_of_80s_technology_value, something_you_buy_on_ebay_value)
 print("– {}").format(spider_value)
@@ -132,7 +135,14 @@ print("– You're the best agent we have. How do you prepare for such tense miss
 print("– By waking up every morning, going up of the roof, and {} and by repeating my own personal mantra {} {}").format(another_ing_verb_value, favorite_song_lyric_value, favorite_song_lyric_value)
 
 
-time.sleep(60)
+time.sleep(90)
+print("This message will auto destroy in 5 seconds")
+countdown = 5
+while countdown:
+    print(countdown)
+    countdown -= 1
+    time.sleep(1)
+
 webbrowser.open_new("https://youtu.be/6iClgRjmTvc")
 
 
